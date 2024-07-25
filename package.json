@@ -2,6 +2,7 @@
   "name": "my-first-ts",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
@@ -11,6 +12,7 @@
     "@types/node": "^16.18.104",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "deploy": "^1.0.3",
     "formik": "^2.4.6",
     "gh-pages": "^6.1.1",
     "lazy": "^1.0.11",
@@ -19,12 +21,14 @@
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "npm run build && gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
